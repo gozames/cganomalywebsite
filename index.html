@@ -126,9 +126,18 @@ Cryptographic Anomaly is based on Litecoin, itself a "lite" version of Bitcoin, 
 <b>Max Anomalies:</b> 10 Billion<br>
 </div>
 <div align="left">
+<p><b>Find the <u>maximum</u> amount of CGA (if diff < 3) to come into existence (not counting bonus blocks):</b><br>
+1 month(30days) = 2,592,000 sec<br>
+2,592,000 sec / 40 sec blocks = 64,800 blocks per month<br>
+64,800 blocks per month x .33333333 per block = 21,599.999784 CGA per month<br>
+21,599.999784 CGA per month x 12 = 259,199.997408 CGA per year<br>
+100 years (if you live to 100) x 259,199.997408 CGA per year = 25,919,999.7408 CGA in a "lifetime"<br>
+This makes CGA the longest minable coin that does not half, gives you "whole" number block rewards, and can be considered a "rare coin". What this means is that CGA will be profitable to mine for generations to come. Your children's children's children's children will be getting the same block rewards you are getting now.
+<br>
+<b><u>Minimum</u> amount of time to "mine out" CGA:</b><br>
+10 Billion CGA / 259,199.997408 CGA per year = 38,580.2472993827 years</p>
 <p>Cryptographic Anomaly is a crypto-coin that uses a unique block reward algorithm. The block reward is directly effected by the current difficulty. If the difficulty is below 3 then the block reward will be 0.33333333. If the difficulty is above 3 then the algorithm uses the <a href="http://en.wikipedia.org/wiki/Modulo_operation">modulo operation</a> to find the remainder of the block number divided by the difficulty. If the remainder falls between 0.25 and 0 then an Anomaly is born, making a bonus block that is worth 1 CGA for that block. If the remainder doesn't fall between 0.25 and 0 then the block reward is 1 divided by the current difficulty.</p>
 <p>What this does is as the difficulty increases (from a higher network hash rate due to increased popularity/demand) the amount of anomalies that are being generated decreases. At any given time the probability of 1 CGA coming into existence is, more or less, 1/difficulty (unless the difficulty is 3 or below, then probability is 1/3). The probability of generating a bonus block is (1/diff) * (diff * 4).</p>
-<p>The <u>max</u> amount of CGA that can come into existence in your lifetime will be around 16 million. That makes the <u>max</u> per year around 200k, and <u>fastest</u> that CGA can be mined out of it's 10 billion coins at +50k years. Which makes CGA the longest minable coin that does not half, gives you "whole" number block rewards, and can be considered a "rare coin". What this means is that CGA will be profitable to mine for generations to come. Your children's children's children's children will be getting the same block rewards you are getting now.</p>
 <p>To calculate the probability of how often, yourself (solo-mining) or a pool, will generate 1 CGA you would need to factor in your (or pools) hash-rate. First you need to find the probability of generating an anomaly at any given time (1/difficulty). Then you need to find the probability of you or your pool solving a block (your hash-rate/ network hash-rate). Now multiply those two probabilities together to get your personal probability of generating an anomaly.</p>
 <p>Example:(1/4) * (10,000,000/200,000,000) = 1/80; So you should generate 1 CGA out of every 80 blocks, which would take about 53.33 minutes(that is if all variables stay stagnent during those 80 blocks).</p>
 <p>To find the probability of generating a bonus block, all you need to do is multiply your probability for generating 1 CGA by 4.<br>
@@ -148,9 +157,11 @@ The actual C++ block reward algorithm can be found <a href="https://github.com/s
   </div>
   <div id="title_text">Pools <span class="small_text">Pools of Anomalies</span></div></div>
 <u><h3>MPOS</h3></u>
-<a href="http://cga.thedigitalmint.net/">cga.thedigitalmint.net</a><== Prop 1% fee<br>
+<a href="http://cga.inceptioncraft.net/pool/">cga.inceptioncraft.net/pool/</a> <== PPLNS 1% fee<br>
+<a href="http://cga.thedigitalmint.net/">cga.thedigitalmint.net</a> <== Prop 1% fee<br>
 <a href="http://mpos.cga.anomalypool.com/">mpos.cga.anomalypool.com</a> <== Prop 1.5% fee<br>
 <u><h3>P2P</h3></u>
+<a href="http://cga.inceptioncraft.net/p2pool/">cga.inceptioncraft.net/p2pool/</a> <== 0% fee<br>
 <a href="http://anomalypool.com/">stratum+tcp://anomalypool.com:2124</a> <== 0% fee<br>
 <a href="http://cga.p2p.0x0a.nl:23932">stratum+tcp://cga.p2p.0x0a.nl:23932</a> <== 0.9% fee<br>
 <a href="http://omargpools.ca:23932/static/">omargpools.ca:23932</a> <== 1% fee<br>
@@ -164,6 +175,7 @@ The actual C++ block reward algorithm can be found <a href="https://github.com/s
    <img src="imgs/para.png" width="81" height="81" alt="para" />
   </div>
   <div id="title_text">Exchanges <span class="small_text">Trade Anomalies</span></div></div>
+<a href="https://www.swaphole.com/">SwapHole.com/</a><br>
 <a href="https://www.bittrex.com/Market/Index?MarketName=BTC-CGA">Bittrex.com</a><br>
 <a href="https://poloniex.com/exchange/btc_cga">Poloniex.com</a><br>
 <a href="https://www.allcoin.com/?ref=124968">Allcoin.com</a><br>
@@ -235,7 +247,7 @@ Channel: #CGAnomaly on <a href="http://webchat.freenode.net/">Freenode</a>
 <table>
 <tr>
 <td><a href="downloads/CGA_1.3.2.1_WIN.exe"><img src="imgs/windows.png" width="65" height="58" alt="Windows Wallet"></a><br></td>
-<td><a href="downloads/CGA_1.3.2.1_OSX10.7.tar"><img src="imgs/osx.png" width="48" height="58" alt="OSX Wallet"></a></td>
+<td><center><a href="downloads/CGA_1.3.2.1_OSX10.7.tar"><img src="imgs/osx.png" width="48" height="58" alt="OSX Wallet"></a><br><a href="downloads/CGA_1.3.2.1_OSX10.9.tar">OSX 10.9?</a></center></td>
 <td><a href="https://github.com/s4w3d0ff/cryptographicanomaly/"><img src="imgs/github.png" width="60" height="60" alt="Git Source"></a><br></td>
 </tr></table>
 <a href="http://mucowa.com/">Cryptographic Anomaly is also included in MuCoWa!<br />A light-weight multiwallet!</a>
