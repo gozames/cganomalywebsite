@@ -30,34 +30,21 @@ nav li { background:none; border-top:solid 1px rgba(000,000,000,0.05); display:b
 nav li a { width:100%; height:auto; padding:0; line-height:45px;}
 nav li:hover a, nav li.active a { background:rgba(000,000,000,0.05); color:rgba(000,000,000,0.6) }
 
-#container { padding:15px 0 10px 0; } 
-#footer { padding:10px 0; margin-bottom:5px; }
+#container {padding:15px 0 10px 0;} 
+#footer{padding:10px 0; margin-bottom:5px;}
 #logo_big{display:none;}
 #logo_small{display:block;}
-#twitter-widget-0{
-	display:none;
-	}
-#reddit_feed{
-	display:none;
-	}
-#title_text{
-	font-size:20px;
-	margin-top:-65px;
-	}
-}
+#twitter-widget-0{display:none;}
+#reddit_feed{display:none;}
+.small_text{display:none;}
+.poolStats{display:none;}
 
 @media only screen and (max-width: 400px), only screen and (max-device-width: 400px), only screen and (max-width: 400px) {
 #logo_big{display:none;}
 #logo_small{display:block;}
+#twitter-widget-0{display:none;}
+#reddit_feed{display:none;}
+.small_text{display:none;}
+#title_text{font-size: 25px;padding-left: 25px;}
 
-#twitter-widget-0{
-	display:none;
-	}
-#reddit_feed{
-	display:none;
-	}
-#title_text{
-	font-size:15px;
-	margin-top:-63px;
-	}
 }

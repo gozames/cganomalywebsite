@@ -37,7 +37,7 @@
 <body>
 <!-- Start Header-->
 <header id="header">
-		<div class="pageWidth clearfix">
+<div class="pageWidth clearfix"><!--Header Container-->
 <script>
 $(function() {
     var $rota = $('.logo_ani_big'),
@@ -52,8 +52,6 @@ $(function() {
     }
     rotate();
 });
-</script>
-<script>
 $(function() {
     var $rota = $('.logo_ani_small'),
         degree = 0,
@@ -67,29 +65,37 @@ $(function() {
     }
     rotate();
 });
+
+$("#div1").mouseenter(function() {
+    $("#show-div2").css('visibility', 'visible');
+});
+$("#show-div2").mouseleave(function() {
+    $("#show-div2").css('visibility', 'hidden')
+});
 </script>
 <center>
-<h1>Cryptographic Anomaly</h1>
-<br>
-"The Elusive Coin"<br></center>
-<div id="logo_big">
-<img class="logo_ani_big" src="imgs/ring.png" />
-</div>
-<div id="logo_small">
-<img class="logo_ani_small" src="imgs/ring_small.png" />
-</div>
-
-<div id="def">
-<span><b>a·nom·a·ly</b></span>  (&#601;-n&#335;m&#8242;&#601;-l&#275;)<br>
-<i>n. pl.</i> a·nom·a·lies
-<ol><li>Deviation or departure from the normal or common order, form, or rule.</li>
-<li>One that is peculiar, irregular, abnormal, or difficult to classify.</li>
-<li>Astronomy: The angular deviation, as observed from the sun, of a planet from its perihelion.</li></ol></div>
-				
-				<!-- Start Navigation-->
-				<nav id="navigation" class="clearfix"><a href="#" id="menu">Menu</a>
+<h1>Cryptographic Anomaly</h1><br>
+"The Elusive Coin"<br>
+</center>
+	<div id="logo_big"><!--Big Logo-->
+		<img class="logo_ani_big" src="imgs/ring.png" />
+	</div>
+	<div id="logo_small"><!--Small Logo-->
+		<img class="logo_ani_small" src="imgs/ring_small.png" />
+	</div>
+	<div id="def"><!--Anomaly Definition-->
+		<span><b>a·nom·a·ly</b></span>  (&#601;-n&#335;m&#8242;&#601;-l&#275;)<br>
+		<i>n. pl.</i> a·nom·a·lies
+		<ol>
+    	<li>Deviation or departure from the normal or common order, form, or rule.</li>
+		<li>One that is peculiar, irregular, abnormal, or difficult to classify.</li>
+		<li>Astronomy: The angular deviation, as observed from the sun, of a planet from its perihelion.</li>
+    	</ol>
+    </div>
+	<!-- Start Navigation-->
+	<nav id="navigation" class="clearfix"><a href="#" id="menu">Menu</a>
 						<ul>
-								<li><a href="#page0" title="Home">Home</a></li><li><a href="#page1" title="About CGA">About</a></li><li><a href="#page2" title="Pools">Pools</a></li><li><a href="#page3" title="Services">Services</a></li>
+								<li><a href="#page0" title="Home">Home</a></li><li><a href="#page1" title="About CGA">About</a></li><li><a href="#page2" title="Pools">Pools</a></li><li><a href="#page3" title="Services">Services</a></li><li><a href="#page4" title="1BillionHex">1BillionHex</a></li>
 						</ul>
 				</nav>
 				<!-- End Navigation --> 
@@ -100,8 +106,28 @@ $(function() {
 
 <section id="container">
 		<article class="pageWidth pageControl"> <div class="pageContainer" id="home"><center><h2>Welcome To CGAnomaly.com</h2></center>
-<p>Over time, CGA will become one of the most elusive cryptographic coins that has ever been made.<br><br>Cryptographic Anomaly is a new innovative coin, the first (and only) of its kind.  Known also as the "elusive" coin, it uses current difficulty to determine how much of an anomaly should come into existence.<br><br>Because of its newly conceived block reward algorithm, as the coin gains popularity the rate that coins come into circulation will decrease, because the probability of an anomaly will decrease.  Put another way: CGA is designed such that as popularity increases, the supply of new coins decreases, pushing the value of CGA to mathematically increase, all else being constant in its constant state of chaos.<br><br>Unlike other so-called "rare" coins, where one can project how many coins will be generated at any given time and at what duration in the future,  Cryptographic Anomaly allows one to be uncertain about how many or how much there will be in the future.<br><br>
-Cryptographic Anomaly is based on Litecoin, itself a "lite" version of Bitcoin, using scrypt as its proof-of-work algorithm.</p>
+<div class="topLeft">
+	<div class="first"><img src="imgs/bigfoot.png" width="78" height="110"><br>
+    The most elusive coin ever!</div>
+    <div class="second"><p>The more people that look for new Cryptographic Anomalies, the harder it is to find! As new Scrypt ASIC come out, CGA will just become more elusive, makeing it more, and more valuable. Over time CGA could become one of the rarest mined coin.</p></div>
+</div>
+<div class="topRight">
+	<div class="first"><img src="imgs/trading.png" width="110" height="110"><br>
+    Amazing investment opportunity!</div>
+    <div class="second"><p>Because of the nature of Cryptographic Anomaly, CGA is a great investment built around growing technologies. Everyone mining other coins are being torn apart emotionally buy ASIC, CGA embraces the coming wave of technology by letting new technologies help push CGA further into history. While other coins use a coin "halving" technique to combat inflation, CGA uses real world events to determine how many coins come into circulation.</p></div>
+</div>
+<div class="topLeft">
+	<div class="first"><img class="evoImg" src="imgs/evolution.png" width="160" height="79"><br>
+    Capable of being mined for generations!</div>
+    <div class="second"><p>No more then 259,199.997408 CGA will be mined per year, that means you wont see more then 25,919,999.7408 CGA in a "lifetime" (if you were born today and lived to 100)! With a max of 10 billion CGA, it will be mined for over 38 thousand years. This will make CGA the longest mined coin in history! Your children's great grand children will mine CGA!</p></div>
+</div>
+<div class="topRight">
+	<div class="first"><img src="imgs/gaming.png" width="180" height="111"><br>
+    Extended integration!</div>
+    <div class="second"><p>Cryptographic Anomaly is being worked into a new MMORPG called 1 Billion Hex! This adds value to CGA. The game will allow you to potentially accumulate income through the game using crypto coins. CGA, along with 3 other coins, will be a crucial part of the game. CGA will be used for everything from buying supplies, to buying moons. Parts of the game will be directly effected by the block-chain of the crypto coins in use.</p></div>
+</div>
+<br>
+<br>
 <center>
 <a href="https://bitcointalk.org/index.php?topic=437950">Bitcointalk Announcement Thread</a><br><br>
 </center>
@@ -110,7 +136,9 @@ Cryptographic Anomaly is based on Litecoin, itself a "lite" version of Bitcoin, 
 
 
 </div>
-		<div class="pageContainer"><div id="title_box">
+<div class="pageContainer">
+<div align="center">
+  <div id="title_box">
   <div id="para" class="inline">
    <img src="imgs/para.png" width="81" height="81" alt="para" />
   </div>
@@ -118,7 +146,7 @@ Cryptographic Anomaly is based on Litecoin, itself a "lite" version of Bitcoin, 
   About CGA
   </div>
 </div>
-<div style="margin:0 auto; width:65%; padding:10px; -webkit-border-radius: 10px 10px 10px 10px; border-radius: 10px 10px 10px 10px; color:#000; border: 3px solid #333; background:#DFDFDF;">
+<div class="infoBox">
 <b>Block Reward:</b> 1/diff (unless diff is < 3; then 1/3 CGA)<br>
 <b>Bonus Block:</b> if diff > 3 and (block# % diff) < 0.25; then reward = 1 CGA<br>
 <b>Block Time:</b> 40 seconds<br>
@@ -126,6 +154,8 @@ Cryptographic Anomaly is based on Litecoin, itself a "lite" version of Bitcoin, 
 <b>Max Anomalies:</b> 10 Billion<br>
 </div>
 <div align="left">
+<p>Over time, CGA will become one of the most elusive cryptographic coins that has ever been made.<br><br>Cryptographic Anomaly is a new innovative coin, the first (and only) of its kind.  Known also as the "elusive" coin, it uses current difficulty to determine how much of an anomaly should come into existence.<br><br>Because of its newly conceived block reward algorithm, as the coin gains popularity the rate that coins come into circulation will decrease, because the probability of an anomaly will decrease.  Put another way: CGA is designed such that as popularity increases, the supply of new coins decreases, pushing the value of CGA to mathematically increase, all else being constant in its constant state of chaos.<br><br>Unlike other so-called "rare" coins, where one can project how many coins will be generated at any given time and at what duration in the future,  Cryptographic Anomaly allows one to be uncertain about how many or how much there will be in the future.<br><br>
+Cryptographic Anomaly is based on Litecoin, itself a "lite" version of Bitcoin, using scrypt as its proof-of-work algorithm.</p>
 <p><b>Find the <u>maximum</u> amount of CGA (if diff < 3) to come into existence (not counting bonus blocks):</b><br>
 1 month(30days) = 2,592,000 sec<br>
 2,592,000 sec / 40 sec blocks = 64,800 blocks per month<br>
@@ -147,7 +177,7 @@ Here is an excel spread sheet that does the math for you:<br />
 <a href="/downloads/Projected_Anomalies.xls">Projected_Anomalies.xls</a><br /><br />
 
 The actual C++ block reward algorithm can be found <a href="https://github.com/s4w3d0ff/cryptographicanomaly/blob/master/src/main.cpp#L1067">here</a>.<br />
-
+</div>
 </div>
 </div></div>
 <div class="pageContainer"><div align="center">
@@ -156,15 +186,16 @@ The actual C++ block reward algorithm can be found <a href="https://github.com/s
    <img src="imgs/para.png" width="81" height="81" alt="para" />
   </div>
   <div id="title_text">Pools <span class="small_text">Pools of Anomalies</span></div></div>
-<u><h3>MPOS</h3></u>
+  <br>
+<h4>MPOS</h4>
 <a href="http://cga.inceptioncraft.net/pool/">cga.inceptioncraft.net/pool/</a> <== PPLNS 1% fee<br>
 <a href="http://cga.thedigitalmint.net/">cga.thedigitalmint.net</a> <== Prop 1% fee<br>
-<a href="http://mpos.cga.anomalypool.com/">mpos.cga.anomalypool.com</a> <== Prop 1.5% fee<br>
-<u><h3>P2P</h3></u>
-<a href="http://cga.inceptioncraft.net/p2pool/">cga.inceptioncraft.net/p2pool/</a> <== 0% fee<br>
+<a href="https://cga.theminingpools.com/">cga.theminingpools.com</a> <== Prop 1% fee<br>
+<h4>P2P</h4>
 <a href="http://anomalypool.com/">stratum+tcp://anomalypool.com:2124</a> <== 0% fee<br>
 <a href="http://cga.p2p.0x0a.nl:23932">stratum+tcp://cga.p2p.0x0a.nl:23932</a> <== 0.9% fee<br>
 <a href="http://omargpools.ca:23932/static/">omargpools.ca:23932</a> <== 1% fee<br>
+<img src="https://stats.thedigitalmint.net/cgapools.png" class="poolStats">
 </div>
 
 </div>
@@ -174,8 +205,8 @@ The actual C++ block reward algorithm can be found <a href="https://github.com/s
   <div id="para" class="inline">
    <img src="imgs/para.png" width="81" height="81" alt="para" />
   </div>
-  <div id="title_text">Exchanges <span class="small_text">Trade Anomalies</span></div></div>
-<a href="https://www.swaphole.com/">SwapHole.com/</a><br>
+<div id="title_text">Exchanges <span class="small_text">Trade Anomalies</span></div></div>
+<a href="https://www.swaphole.com/">SwapHole.com</a><br>
 <a href="https://www.bittrex.com/Market/Index?MarketName=BTC-CGA">Bittrex.com</a><br>
 <a href="https://poloniex.com/exchange/btc_cga">Poloniex.com</a><br>
 <a href="https://www.allcoin.com/?ref=124968">Allcoin.com</a><br>
@@ -186,7 +217,7 @@ The actual C++ block reward algorithm can be found <a href="https://github.com/s
   <div id="para" class="inline">
    <img src="imgs/para.png" width="81" height="81" alt="para" />
   </div>
-  <div id="title_text">Block Explorers <span class="small_text">Explore Anomalies</span></div></div>
+  <div id="title_text">Explorers <span class="small_text">Explore Anomalies</span></div></div>
 <a href="http://cga.inceptioncraft.net/blockexplorer/">cga.inceptioncraft.net/blockexplorer/</a><br>
 <a href="http://node1.cga.anomalypool.com:2760/chain/CryptographicAnomaly">node1.cga.anomalypool.com:2760/chain/CryptographicAnomaly</a><br>
 <a href="http://cga.thedigitalmint.org/">cga.thedigitalmint.org/</a><br>
@@ -228,7 +259,7 @@ The actual C++ block reward algorithm can be found <a href="https://github.com/s
   </div>
   <div align="left" id="title_text">Games <span class="small_text">Play With Anomalies</span></div></div>
 <a href="http://justanarcade.com/">JustAnArcade.com</a><br>
-<a href="https://www.1billionhex.com/">1BillionHex</a><small>(coming soon!)</small><br>
+<a href="https://cryptocointalk.com/topic/6375-1billionhex-the-game/">1BillionHex</a><small>(coming soon!)</small><br>
 
 <div align="left" id="title_box">
   <div id="para" class="inline">
@@ -237,7 +268,20 @@ The actual C++ block reward algorithm can be found <a href="https://github.com/s
   <div align="left" id="title_text">IRC <span class="small_text">Chat With Anomalies</span></div></div>
 Channel: #CGAnomaly on <a href="http://webchat.freenode.net/">Freenode</a>
 </div>
-</div> </article>
+</div> 
+<div class="pageContainer">
+<div align="center">
+<div align="left" id="title_box">
+  <div id="para" class="inline">
+   <img src="imgs/para.png" width="81" height="81" alt="para" />
+  </div>
+  <div align="left" id="title_text">1BillionHex <span class="small_text">Play With Anomalies</span></div></div>
+<center>
+<img src="imgs/CGA_WORLD.gif"></center>
+<p align="left">1BillionHex is a trading, exploration, building and combat on-line multi-player game that uses crypto coins as its in game currency. It is considered to be a MMORPG but is much more. The game is an entire galaxy within its self, stars with solar flares, planets with different topography, moons, and space pirates included. You can read more about this amazing game that is currently in production <a href="https://cryptocointalk.com/topic/6375-1billionhex-the-game/">here</a>, or watch this <a href="http://youtu.be/MapHRqP1y4M">teaser</a>.</p>
+</div>
+</div>
+</article>
 </section>
 <div id="downloads" class="pageWidth">
 <center>
@@ -246,8 +290,8 @@ Channel: #CGAnomaly on <a href="http://webchat.freenode.net/">Freenode</a>
 <div id="download_links" align="center">
 <table>
 <tr>
-<td><a href="downloads/CGA_1.3.2.1_WIN.exe"><img src="imgs/windows.png" width="65" height="58" alt="Windows Wallet"></a><br></td>
-<td><center><a href="downloads/CGA_1.3.2.1_OSX10.7.tar"><img src="imgs/osx.png" width="48" height="58" alt="OSX Wallet"></a><br><a href="downloads/CGA_1.3.2.1_OSX10.9.tar">OSX 10.9?</a></center></td>
+<td><a href="downloads/CGA_1.3.3.2_WIN.exe"><img src="imgs/windows.png" width="65" height="58" alt="Windows Wallet"></a><br></td>
+<td><center><a href="downloads/CGA_1.3.3.2_OSX10.7.tar"><img src="imgs/osx.png" width="48" height="58" alt="OSX Wallet"></a><br><a href="downloads/CGA_1.3.3.2_OSX10.9.tar">OSX 10.9?</a></center></td>
 <td><a href="https://github.com/s4w3d0ff/cryptographicanomaly/"><img src="imgs/github.png" width="60" height="60" alt="Git Source"></a><br></td>
 </tr></table>
 <a href="http://mucowa.com/">Cryptographic Anomaly is also included in MuCoWa!<br />A light-weight multiwallet!</a>

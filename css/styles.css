@@ -65,6 +65,7 @@ body { background:#1b3340 url(../imgs/seamless_tile.jpg) repeat 0 0; margin:0; }
 #def ol
    {
 	   list-style:upper-roman;
+	   margin-top: 0px;
    }
 #header { text-align:center; margin-bottom:10px; }
 header, nav, section, footer { display:block;}
@@ -111,9 +112,12 @@ border-radius:10px;
 font-size:20px;
 }
 nav li { background:url(../img/nav-devider.png) no-repeat 0% center; text-align:center; padding:0 3% 0 4%; text-align:center; display:inline; border-radius:50%; }
-nav li a { color:#1C75BC; text-shadow: 0px 1px .5px #888;
-	filter: dropshadow(color=#888, offx=0, offy=1px); display:inline-block; line-height:40px;}
-nav li a:hover, nav li.active a { color:rgba(000,000,000,0.6) }
+nav li a { color:#1C75BC; text-shadow: 0px 1px .5px #222; filter: dropshadow(color=#222, offx=0, offy=1px); display:inline-block; line-height:40px;}
+nav li a:hover, nav li.active a { color:rgba(000,000,000,0.6); text-shadow: 0px 1px .5px #888; filter: dropshadow(color=#888, offx=0, offy=1px);    		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-ms-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;}
 nav li:first-child { background:none; }
 	
 #menu {  display:none; color:#1C75BC; font-size:16px; background-image:url(../img/menu-img.png); background-repeat:no-repeat; background-position:97% 15px; padding:15px 0 15px 3%; text-align:left; line-height:23px;  }
