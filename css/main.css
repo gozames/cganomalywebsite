@@ -23,7 +23,7 @@ table {	border-collapse: collapse; border-spacing: 0;}
 
 :focus { outline:none;}
 img { vertical-align:top; border:0; max-width:100% }
-p { padding:0 0 15px 0}
+p { padding:0 10px 15px}
 strong { font-weight:bold }
 address { font-size:13px; font-style:normal }
 
@@ -100,7 +100,7 @@ div.topLeft {
 div.topLeft div {
 	width: 100%;
 	min-height:100%;
-	font-size: 12px;
+	font-size: 15px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -141,7 +141,7 @@ div.topRight {
 div.topRight div {
 	width: 100%;
 	height:150px;
-	font-size: 12px;
+	font-size: 15px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -181,4 +181,9 @@ div.topRight:hover div.first {
 	height:150px;
 	padding-top:5px;
 	padding-bottom:5px;
-		}
+			}
+.contentBox
+{
+	width: 80%;
+	margin-top: 40px;
+}
